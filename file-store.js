@@ -61,7 +61,6 @@ class FileStore {
 		else {
 			if (dirpath.match(/[a-zA-Z]:[\\/].*/)) {
 				this.dirpath = dirpath;
-				console.log("matched")
 				if (!fs.existsSync(dirpath)) {
 					shelljs.mkdir('-p', dirpath)
 					const store = (this.dirpath + '/store.json');
