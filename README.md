@@ -1,6 +1,7 @@
 # Freshworks
 Backend Assignment
-you should run 
+how to run 
+(nodejs should be installed on the machine)
 1.npm install to download the required packages
 2.node test
 
