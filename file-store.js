@@ -29,6 +29,7 @@ class FileStore {
 			}
 			else {
 				fs.writeFileSync(storeregistry, JSON.stringify({ useFlag: true }));
+				return true;
 			}
 		}
 		//if path not provided it checks with default path(public documents)
@@ -48,7 +49,7 @@ class FileStore {
 			//if store is there it try to register and intialize store_content with file data
 			else {
 				const storeregistry = (this.dirpath + '/store-registry.json');
-				registerStore(storeregistry)
+				if(registerStore(storeregistry))
 				console.log("using default dirpath (public documents)");
 				const store = (this.dirpath + '/store.json');
 				const data = fs.readFileSync(store);
