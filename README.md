@@ -1,5 +1,8 @@
 # Freshworks
 Backend Assignment
+you should run 
+1.npm install to download the required packages
+2.node test
 
 File System is exposed as a node module it can be imported(use require()) and used
 File-store is exposed as json file
